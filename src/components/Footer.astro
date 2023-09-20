@@ -1,0 +1,36 @@
+---
+
+---
+
+<footer>
+  <div class="icons">
+    <img width="25px" height="25px" src="github.svg" alt="github" />
+    <img width="25px" height="25px" src="linkedin.svg" alt="linkedin" />
+    <img width="25px" height="25px" src="mail.svg" alt="mail" />
+  </div>
+</footer>
+
+<style>
+  :global(.dark) img {
+    filter: invert(100%) sepia(6%) saturate(86%) hue-rotate(297deg)
+      brightness(116%) contrast(100%);
+  }
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    width: 80%;
+    margin: 40px;
+  }
+  .icons{
+    display: flex;
+    gap: 10px;
+  }
+
+  img {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+</style>
