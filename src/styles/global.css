@@ -1,6 +1,8 @@
 * {
 }
-
+body {
+  margin: 0;
+}
 
 html.dark {
   background-color: rgb(17 17 17);
@@ -84,39 +86,66 @@ html.dark {
   font-weight: 500;
 }
 
-.card-container{
+.card-container {
   width: calc(80% - 40px);
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr 1fr;
-  gap:30px
-
+  gap: 30px;
 }
 nav {
   display: flex;
   width: 80%;
   align-items: center;
   justify-content: space-between;
+  height: 80px;
+}
+nav > a {
+  display: flex;
 }
 
+.test {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: spa;
+  
+}
+.ghemusi {
+  position: absolute;
+  right: 0;
+/* right: 100px;
+top: -80px; */
+  z-index: -10;
+  /* top: 40px;
+  right: 300px; */
+  border-radius: 200px;
+  width: 200px;
+  height: 200px;
+}
 
-@media screen and (min-width: 1400px){
-  .card-container{
+@media screen and (min-width: 1400px) {
+  .card-container {
     width: calc(60% - 40px);
   }
-  nav{
-   width: 60%;
+  nav {
+    width: 60%;
   }
-  .body-container{
+  .body-container {
     width: 60%;
   }
 }
 
-@media screen and (max-width: 800px){
-  .card-container{
+@media screen and (max-width: 800px) {
+  .card-container {
     grid-template-columns: 1fr;
   }
-  .name{
+  .name {
     font-size: 4rem;
+  }
+  .ghemusi {
+
+    width: 150px;
+    height: 150px;
   }
 }
 
