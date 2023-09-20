@@ -93,8 +93,9 @@ html.dark {
 }
 
 .card-container {
-  width: calc(80% - 40px);
+  width: 80%;
   display: grid;
+ 
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
@@ -135,7 +136,7 @@ top: -80px; */
 
 @media screen and (min-width: 1400px) {
   .card-container {
-    width: calc(60% - 40px);
+    width: 60%;
   }
   nav {
     width: 60%;
