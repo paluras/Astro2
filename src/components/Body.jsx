@@ -5,7 +5,7 @@ const Body = () => {
     <>
       <div className="body-container">
         <p className="text-name">I am</p>
-        <h1 className="name">AlABAA Portocala</h1>
+        <h1 className="name">Andrei Ghemusi</h1>
         <p className="text-name">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error soluta
           eum sed dolores corrupti iste debitis dignissimos aspernatur commodi
