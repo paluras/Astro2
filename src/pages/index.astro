@@ -4,8 +4,7 @@ import Body from "../components/Body.jsx";
 import Card from "../components/Card.tsx";
 import "../styles/global.css";
 import Footer from "../components/Footer.astro";
-import Fetch from "../components/Fetch.jsx"
-
+import Fetch from "../components/Fetch.jsx";
 ---
 
 <!doctype html>
@@ -27,34 +26,34 @@ import Fetch from "../components/Fetch.jsx"
     <div class="card-container">
       <Card
         client:load
-		url="https://github.com/Andrei-Ghemusi/BDD_FashionDays"
+        url="https://github.com/Andrei-Ghemusi/BDD_FashionDays"
         title="Testing using Behave framework"
         tehno="Python, Behave"
         description="This project focuses on conducting functional tests for the FashionDays website using Behave with Python. If you are interested in non-functional tests, please refer to this repository."
       />
       <Card
-	  url="https://github.com/Andrei-Ghemusi/Python_Basics"
+        url="https://github.com/Andrei-Ghemusi/Python_Basics"
         client:load
         title="Python Basics"
         tehno="Python"
-        description="This project focuses on conducting functional tests for the FashionDays website using Behave with Python. If you are interested in non-functional tests, please refer to this repository."
+        description="This is a foundational project that serves as an essential stepping stone for my coding journey. This project is meticulously crafted to provide a comprehensive and accessible introduction to the fundamental concepts and principles of Python."
       />
       <Card
-	  url="https://github.com/Andrei-Ghemusi/Spotify_API_Testing"
+        url="https://github.com/Andrei-Ghemusi/Spotify_API_Testing"
         client:load
         title="Spotify API Testing"
         tehno="Python"
-        description="This project focuses on conducting functional tests for the FashionDays website using Behave with Python. If you are interested in non-functional tests, please refer to this repository."
+        description="I create and execute a suite of Python-based test scripts that interact with Spotify's API. These scripts encompass a range of testing scenarios, including data validation, authentication, and performance testing. My goal is to ensure that the API functions seamlessly, adheres to Spotify's documentation, and meets the high standards of data integrity and security."
       />
       <Card
-	  url="https://github.com/Andrei-Ghemusi/unittest_project_FashionDays"
+        url="https://github.com/Andrei-Ghemusi/unittest_project_FashionDays"
         client:load
         title="Testing using Unittest framework"
         tehno="Python, Unittest"
-        description="This project focuses on conducting functional tests for the FashionDays website using Behave with Python. If you are interested in non-functional tests, please refer to this repository."
+        description="The primary purpose of this project is to conduct a wide range of tests to ensure the robustness and quality of the FashionDays website. These tests include functional tests such as Smoke Testing, Sanity Testing, and Regression Testing, as well as non-functional tests like Performance Testing, Accessibility Testing, and SEO Testing."
       />
     </div>
-	<Fetch client:load />
+    <Fetch client:load />
     <Footer />
   </main>
 
@@ -71,7 +70,6 @@ import Fetch from "../components/Fetch.jsx"
   </style>
 
   <script is:inline>
-	
     const theme = (() => {
       if (
         typeof localStorage !== "undefined" &&
@@ -111,4 +109,5 @@ import Fetch from "../components/Fetch.jsx"
       .getElementById("themeToggle")
       .addEventListener("click", handleToggleClick);
   </script>
+
 </html>
