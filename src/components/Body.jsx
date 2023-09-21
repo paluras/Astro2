@@ -1,6 +1,6 @@
 import "../styles/global.css";
 
-const Body = () => {
+const Body = ({}) => {
   return (
     <>
       <div className="body-container">
@@ -12,7 +12,7 @@ const Body = () => {
           </h1>
           <img
             className="ghemusi"
-            src="photo2.jfif"
+            src="photo-comp.webp"
             alt="Photo of Andrei Ghemusi"
           />
         </div>
